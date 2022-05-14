@@ -1,3 +1,6 @@
+
+// 1번 풀이 내가 직접 해결해본 문제
+
 function solution(s) {
     
     let answer = ''; // answer = ' '; 의 기능을 모르겠음
@@ -19,4 +22,19 @@ function solution(s) {
     return answer;
 }
 
+
+// 2번 풀이 보람님이 풀어본 문제
+
+function solution(s) {
+    let a = s.length
+    if(a % 2 === 0 ){
+        let b = s.substr(a/2-1,2)
+        return(b)
+    }else if(!a % 2 === 0){
+        let c = s.substr(a * .5 - 0.5,1)
+        return(c)
+    }
+}
+
+// 가운데 글자 가져오기
 // https://programmers.co.kr/learn/courses/30/lessons/12903
