@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>react 과제</title>
+
+<script>
+    function hey(){
+
+        alert('제출 완료!');
+
+    }
+    </script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<form action onsubmit = "submit();">
+     First name :
+    <br>
+    <input id="Firstname" type="text" required>
+    <br>
+     Last name :
+    <br>
+    <input id="Lastname" type="text"  required>
+    <br>
+
+     Email :
+    <br>
+    <input id="Email" type="text"  required>
+    <br>
+     Gender :
+    <input type="radio" name="gender" value="male_info">
+     Male
+     <input type="radio" name="gender" value="male_info">
+     Female
+    <br>
+    Favorite :
+    <input type="checkbox" name="lang" value="html_box">
+    HTML
+    <input type="checkbox" name="lang" value="java_box">
+    JAVA
+    <input type="checkbox" name="lang" value="js_box">
+    JavaScript
+    <br>
+    Brower :
+    <select id ="browser" name="broswers">
+        <option value="크롬" selected>크롬</option>
+        <option value="사파리" selected>사파리</option>
+        <option value="엣지" selected>엣지</option>
+    </select>
+    <br>
+    Birthday :
+    <input type="date" name="birthday">
+    <br>
+     <input onclick="hey()" type="submit"/>
+</form>
+
+
+</body>
+</html>
