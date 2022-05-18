@@ -20,7 +20,7 @@ function solution(answers) {
           answer.push(i + 1);                                               //answer에 넣어준다
         }
       }
-    
+
       return answer;
     }
     
