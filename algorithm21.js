@@ -1,18 +1,14 @@
+s = "try hello world"
+
+
 function solution(s) {
-    return s
-      .split(" ")
-      .map((el) =>el.split("").map((el, index) =>
-            index % 2 == 0 ? el.toUpperCase() : el.toLowerCase()
-          )
-          .join("")
-      )
-      .join(" ");
+    return s.split(" ").map(el =>el.split("").map((el, index) =>index % 2 == 0 ? el.toUpperCase() : el.toLowerCase()).join("")).join(" ");
   }
   
   /* s.split(' ') // 띄어쓰기를 기준으로 나눕니다. [ 'try', 'hello', 'world' ]
     
-  .map(el => e.lsplit('')) 나눈것을 기준으로 요소 하나 하나씩 나눠줍니다 
-  [[ 't', 'r', 'y' ], [ 'h', 'e', 'l', 'l', 'o' ], [ 'w', 'o', 'r', 'l', 'd' ]]
+  .map(el => el.split('')) 나눈것을 기준으로 요소 하나 하나씩 나눠줍니다 
+  [[ 't', 'r', 'y' ], [ 'h', 'e', 'l', 'l', ''o ], [ 'w', 'o', 'r', 'l', 'd' ]]
     
   .map((el, index) => index % 2 == 0 ? el.toUpperCase() : el.toLowerCase())
   //map에서 첫번째는 앞에서 가져온 요소, 두번째는 index를 반환 합니다!
@@ -25,4 +21,5 @@ function solution(s) {
   .join(' ') 큰 배열들을 합쳐줍니다.
 
   */
+  
   
